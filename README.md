@@ -1,5 +1,5 @@
 ## Bird_Voice_Classification
-This repository is the 2nd place solution for DACON contest Bird_Voice_Classification monthly AI Contest
+This repository is the 2nd place solution for DACON Bird_Voice_Classification monthly AI Contest
 
 ## Overview
 현재 진행중인 연구가 음성관련이라 좋은 경험을 쌓고자 대회에 임하게 되었습니다. 
