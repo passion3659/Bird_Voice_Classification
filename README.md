@@ -11,8 +11,18 @@ pytorch-lighting의 문법을 주로 사용하였습니다.
     - mel spectrogram 사용 (n_fft=1024, n_mels=128)
     - ResNetish 모델 사용
 
-## dataset
+## Requirements
+RTX 3090환경에서 사용하였고 실제로 학습중에는 23GB의 GPU 메모리를 사용하였습니다. <br>
+그리고 기본적으로 아래의 환경을 구축하여 실험하였습니다.
+```shell
+conda install pytorch==2.1.0 torchvision==0.16.0 torchaudio==2.1.0 pytorch-cuda=11.8 -c pytorch -c nvidia
+conda install pytorch-lightning
+pip install matplotlib librosa torchlibrosa numpy einops loralib transformers==4.30.2
+```
+
+## Datasets
 데이콘에서 제공하는 zip파일과, train.csv, test.csv, sample_submission.csv 파일을 data폴더에 두고 zip파일을 압축해제하면 됩니다.
+
 
 ## Train & Test
 ```python
