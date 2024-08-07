@@ -11,6 +11,8 @@ pytorch-lighting의 문법을 주로 사용하였습니다.
     - mel spectrogram 사용 (n_fft=1024, n_mels=128)
     - ResNetish 모델 사용
 
+## dataset
+데이콘에서 제공하는 zip파일과, train.csv, test.csv, sample_submission.csv 파일을 data폴더에 두고 zip파일을 압축해제하면 됩니다.
 
 ## Train & Test
 ```python
@@ -18,3 +20,6 @@ python train.py --epochs 20 --batch_size 32 --exp_dir exp10
 
 python test.py --output_filename submission10.csv
 ```
+## reference
+아래 깃허브에서 모델 ResNetish를 가져와 파이프라인에 적용하였습니다.<br>
+https://github.com/daisukelab/sound-clf-pytorch/tree/master
